@@ -1,0 +1,71 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="css/write.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="plugin/codemirror/lib/codemirror.css">
+      <title>포크립트</title>  
+    </head>
+    <body>
+        
+        <div class="header">
+            <div id="avatar" onClick="location.href='/'">
+                <img id="img_avatar" src="https://avatars.githubusercontent.com/u/80041815?s=400&u=7536910e26005e5660d410b795a059abadd0d8b1&v=4"/>
+            </div>
+        </div>
+        <div class="title">
+            <div id="main"><input type="text" class="input_title" placeholder="제목123456789"/></div>
+        </div>
+        <div class="main">
+            <div class="api">
+                <div class="post">
+                    
+                   
+                    <div class="post_desc">
+                      
+                        <textarea id="editor" class="input_desc"></textarea></div>
+                    
+                    
+                    <div id="post_save">SAVE</div>
+                </div>
+            </div>
+            
+        </div>
+        <script>
+        $(document).ready(function(){
+        const submit = document.getElementById('post_save');
+
+              var code = $("#editor")[0];
+              var editor = CodeMirror.fromTextArea(code, {
+              lineNumbers : true,
+              mode:  "markdown"
+            });
+            
+            submit.addEventListener('click', function () {
+                var title = $(".input_title").val();
+                 var desc = editor.getValue();
+                 
+                $.ajax({
+        type : 'POST',
+        url : "http://pocript.com/user/write-process.php",
+        data : {
+                "title" : title, 
+                "description" : marked.parse(desc)
+        },
+        error : function(error) {
+            alert("Error!");
+        },
+        success : function (data) {
+            alert(data)
+        }
+
+        });
+    });
+            
+        });
+             
+        </script>
+        <script type="text/javascript" src="plugin/codemirror/lib/codemirror.js"></script>
+        <script src="plugin/codemirror/mode/markdown/markdown.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </body>
+</html>

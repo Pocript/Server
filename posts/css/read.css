@@ -1,0 +1,177 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+.header {
+    width:100vw;
+    height: 5rem;
+    position: relative;
+}
+#avatar {
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 50%;
+    transform:translate(0%, -50%);
+    margin-left: 1rem;
+    overflow: hidden;
+}
+#img_avatar {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+}
+.title {
+    width:100vw;
+    height: 18rem;
+    position: relative;
+}
+.title > #main {
+    position: absolute;
+    bottom: 6rem;
+    color: #000;
+    font-size: 3.2rem;
+    font-family: 'Pretendard';
+    margin-left: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 4rem;
+    display: inline;
+}
+.title > #sub {
+    color: #000;
+    font-size: 2rem;
+    font-family: 'Pretendard';
+    margin: 0 auto;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 0rem;
+}
+.main {
+    
+}
+.api {
+    width: 60vw;
+    height: 50rem;
+    float: left;
+}
+.profile {
+    width: 35vw;
+    height: 50rem;
+    float: right;
+}
+.api_hr {
+    width:55vw;
+    float: left;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.api_hr > hr {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.api_hr_title{
+    float: left;
+    margin-left: 2.5rem;
+    margin-right: 1.2rem;
+    font-size: 1.3rem;
+    font-family: 'Pretendard';
+    color: #0070fe;
+}
+.profile_hr_title {
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1.2rem;
+    font-size: 1.3rem;
+    font-family: 'Pretendard';
+    color: #0070fe;
+}
+.profile_hr {
+    width: 35vw;
+    float: right;
+    margin-right: 1.8rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.profile_hr > hr {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.post_title{
+    font-size: 2.2rem;
+    font-family: 'Pretendard';
+    font-weight: 800;
+    color: #0070fe;
+}
+.post_desc{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    font-family: 'Pretendard';
+}
+.post {
+    width: 55vw;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
+#profile_avatar {
+    border-radius: 100%;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: -1rem;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    border: 0.1rem solid #e2e2e2;
+    float: left;
+}
+#profile_img_avatar{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+.profile_card{
+    float: left;
+    margin-top: 1.8rem;
+    margin-left: 1rem;
+}
+#profile_name {
+    font-size: 1.8rem;
+    font-family: 'Pretendard';
+    font-weight: 800;
+}
+#profile_desc{
+    font-size: 1.3rem;
+    font-family: 'Pretendard';
+}
+#organization {
+    font-size: 1.1rem;
+    font-family: 'Pretendard';
+    margin-top: 0.3rem;
+}
+#mail {
+    font-size: 1.1rem;
+    font-family: 'Pretendard';
+    margin-top: 0.2rem;
+}
+img {
+    width: 100%;
+}
+h1 {
+    color: #0070fe;
+}
+h2 {
+    color: #0070fe;
+}
+h3 {
+    color: #0070fe;
+}
+a {
+    color: purple;
+    text-decoration-line : none;
+}

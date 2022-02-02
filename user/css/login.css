@@ -1,0 +1,68 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #fbfbfe;
+}
+.login_block {
+    padding: 3rem;
+    background: white;
+    border-radius: 2rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    -webkit-box-shadow: 2px 5px 16px 3px #C0C2C9; 
+    box-shadow: 2px 5px 16px 3px #C0C2C9;
+}
+#login_id {
+    width: 27rem;
+    height: 3.2rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid gray;
+    font-size: 1.8rem;
+    padding-left: 1.5rem;
+    margin-top: 1.5rem;
+    display: block;
+}
+#login_btn {
+    color: white;
+    background: #0070fe;
+    width: 27rem;
+    height: 3.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    display: block;
+}
+.login_title {
+    font-size: 2.7rem;
+    font-weight: 600;
+    font-family: 'Pretendard';
+    text-align: center;
+}
+.login_desc {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-family: 'Pretendard';
+    text-align: center;
+}
+.login_avatar {
+    width: 6.7rem;
+    height: 6.7rem;
+    border: 0rem solid #e2e2e2;
+    border-radius: 100%;
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform:translate(-50%, 0%);
+    overflow: hidden;
+    -webkit-box-shadow: 2px 5px 16px 3px #C0C2C9; 
+    box-shadow: 2px 5px 16px 3px #C0C2C9;
+}
+.login_avatar > img {
+    width: 6.7rem;
+    height: 6.7rem;
+}
